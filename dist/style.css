@@ -1,48 +1,103 @@
+
 .navbar{
     width: 100%;
-    background-color: blue;
-    margin: 0px;
+    background-color: #04009a;
+    margin-bottom: 0px;
     border: none;
     display: grid;
+    height: 80px;
+
+}
+.logoNav{
+    font-family: fantasy;
+    font-size: 40px;
+    margin-top: 14px;
+    margin-left: 10px;
 
 }
 *{
     box-sizing: border-box;
-
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
 .columns{
     float:left;
-    padding: 10px;
-    border: 10px;
     
 
 }
 .left{
-    width: 300px;
-    background-color: burlywood;
-    border: solid 1px ;
-    margin:10px;
+    width: 450px;
+    background-color: #f0ebcc;
+    min-height: 150px;
     
 }
 .right{
-    width: 75%;
-    background-color: cornflowerblue;
-    border: solid 1px ;
-    margin:10px
+    width: 1085px;
+    background-color: #77acf1;
+    height: 673px;
+    
 }
 .folder:after{
     display:table;
     clear: both;
 
 }
-.folder{
-    margin-top: 10px;
 
-}
 .createBtn{
     font-size: 10px;
     padding: 3px;
     margin-left: 5px;
 
 }
+.card{
+    margin-top: 20px;
+    background-color: #3edbf0;
+    display: grid;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 40px;
+    padding: 10px;
 
+}
+.projectName{
+    margin-left: 10px;
+
+}
+.TodoItem{
+    margin-top:10px;
+    display:flex;
+    background-color: #3edbf0;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.Info{
+    display: inline;
+    margin-left: 500px;
+}
+.TaskCheck{
+    margin-top:15px;
+    display: inline;
+    
+}
+.TaskName{
+    display: inline;
+    
+}
+.newProject{
+    padding: 8px;
+    width: 60%;
+    margin-left: 30px;
+}
+.folder{
+    background-color: #dbe6fd;
+    font-size: 30px;
+}
+.inputTodo{
+    margin-left: 30px;
+
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+  }
