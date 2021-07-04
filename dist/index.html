@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>My Todo List</title>
 </head>
 <body>
+    
     <div class='navbar'>
         <p class='logoNav'>MY TODO LIST</p>
 
@@ -16,9 +17,10 @@
     <div class='folder'>
         <div id='project_list' class='columns left'>
             <input type='text' class='newProject' id='newProject' placeholder="Your Project Name">
-            <button type='submit' id='createBtn' class='createBtn'>CREATE FOLDER</button>
+            <button id='createBtn' class='createBtn' onclick="createFolder();">CREATE FOLDER</button>
             <div class='card'>
                 <p class='projectName'>project1</p>
+                <img src="./img/delete.png" alt='delete' width="50px" height="50px">
             </div>
         </div>
         <div id='todo_list' class='columns right'>
@@ -30,9 +32,9 @@
                     <option value="Medium">Medium</option>
                     <option value="Low">Low</option>
                 </select>
-                <button type='submit'>Add</button>
+                <button type='submit' class='addbtn' onclick="createTask();">Add</button>
             </div>
-            <div class='Task-Container'>
+            <div class='Task-Container' id='Task-Container'>
                 <div class='TodoItem' id='1'>
                     <div class='Name'>
                         <input type="checkbox" id="TaskCheck" class='TaskCheck'>
@@ -40,6 +42,10 @@
                     </div>
                     <div class='Info'>
                         <p class='date'>4/5/2564</p>
+                        <p class='priority'>High</p>
+                        <img src="./img/edit.png" alt='edit' width="50px" height="50px">
+                        <img src="./img/delete.png" alt='delete' width="50px" height="50px">
+                        
                     </div>
                 </div>
             </div>

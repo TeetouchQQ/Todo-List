@@ -13,6 +13,7 @@
     font-size: 40px;
     margin-top: 14px;
     margin-left: 10px;
+    color: white;
 
 }
 *{
@@ -32,7 +33,7 @@
     
 }
 .right{
-    width: 1085px;
+    width: 1000px;
     background-color: #77acf1;
     height: 673px;
     
@@ -52,11 +53,17 @@
 .card{
     margin-top: 20px;
     background-color: #3edbf0;
-    display: grid;
+    display: flex;
     text-align: left;
     margin-left: 30px;
     margin-right: 40px;
     padding: 10px;
+    justify-content:space-between ;
+
+}
+.card:hover{
+    background-color: blueviolet;
+    cursor: pointer;
 
 }
 .projectName{
@@ -72,8 +79,12 @@
     margin-right: 50px;
 }
 .Info{
-    display: inline;
-    margin-left: 500px;
+    margin-top: 10px;
+    display: flex;
+    margin-left: 300px;
+    justify-content: space-between;
+    align-self: center;
+    margin-right: auto;
 }
 .TaskCheck{
     margin-top:15px;
@@ -101,3 +112,52 @@
 input[type=text]:focus {
     border: 3px solid #555;
   }
+.TodoInput{
+    width: 300px;
+    padding: 5px;
+
+}
+.birthday{
+    display: flex;
+    margin-right: 20px;
+}
+.createBtn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+.addbtn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+.img{
+    display:flex;
+    margin: 10px;
+}
+.date
+{
+    margin-right: 10px;
+}
+.priority{
+    margin-right: 30px;
+
+}
+input.TaskCheck {
+    width : 20px;
+    height : 20px;
+}
